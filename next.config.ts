@@ -47,9 +47,13 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+
+  basePath: process.env.BASE_PATH || "",
+
   turbopack: {
     root: path.join(__dirname),
   },
+
   async headers() {
     return [
       {
