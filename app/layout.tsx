@@ -3,6 +3,7 @@ import { DM_Sans, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { AppOverlays } from "@/components/app-overlays";
 import { OverlayProvider } from "@/lib/overlay-context";
+import { DTCConsole } from "@/components/debug/dtc-console";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -75,6 +76,7 @@ export default function RootLayout({
         className="min-h-full flex flex-col font-sans text-foreground bg-background"
         suppressHydrationWarning
       >
+        <DTCConsole />
         <OverlayProvider>
           <AppOverlays />
           {children}
