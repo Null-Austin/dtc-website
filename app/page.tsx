@@ -7,10 +7,12 @@ import { UnRollCall } from "@/components/blocks/un-roll-call";
 import { ImpactDtc } from "@/components/blocks/impact-dtc";
 import { FaqDtc } from "@/components/blocks/faq-dtc";
 import { FooterDtc } from "@/components/blocks/footer-dtc";
+import { DTCConsole } from "@/components/debug/dtc-console";
 
 export default function LandingPage() {
   return (
     <>
+      <DTCConsole />
       <Navigation9 />
       <main id="main-content" className="lg:relative lg:z-10 flex-1 bg-background">
         <TerminalHero />
