@@ -46,6 +46,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  output: "export",
+  
   poweredByHeader: false,
 
   basePath: process.env.BASE_PATH || "",
